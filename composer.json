@@ -1,0 +1,43 @@
+{
+    "name": "gerbang-bayar/atome",
+    "description": "Simple laravel package for Atome Payment API",
+    "keywords": [
+        "gerbang-bayar",
+        "atome"
+    ],
+    "homepage": "https://github.com/gerbang-bayar/atome",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Raditz Farhan",
+            "email": "raditzfarhan@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "gerbang-bayar/support": "dev-develop"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GerbangBayar\\Atome\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GerbangBayar\\Atome\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
