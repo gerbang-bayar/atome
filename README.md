@@ -4,11 +4,9 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/gerbang-bayar/atome.svg?style=flat-square)](https://packagist.org/packages/gerbang-bayar/atome)
 ![GitHub Actions](https://github.com/gerbang-bayar/atome/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+SDK for Atome payment gateway. Can use as standalone package or use with `laraditz/bayar` laravel package. 
 
 ## Installation
-
-SDK for Atome payment gateway. Can use as standalone package or use with `laraditz/bayar` laravel package. 
 
 ```bash
 composer require gerbang-bayar/atome
