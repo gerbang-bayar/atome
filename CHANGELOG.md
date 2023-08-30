@@ -1,7 +1,11 @@
 # Changelog
 
-All notable changes to `atome` will be documented in this file
+All notable changes to `gerbang-bayar/atome` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 0.0.0 - 2023-08-30
 
-- initial release
+- Initial release
+
+Added
+- Integrate with Atome payment API.
+- Added `CreatePayment`, `CheckConfiguration`, `GetPayment`, `CancelPayment`, `RefundPayment` requests.
