@@ -65,6 +65,30 @@ $response = $atome->createPayment(
 
 See the [documentation](https://doc.apaylater.com/) for more details.
 
+## Use with Laravel
+
+You can use this package with [laraditz/bayar](https://github.com/laraditz/bayar) as a provider.
+
+### Add configuration to config/services.php
+
+```
+'atome' => [
+    'username' => env('ATOME_USERNAME'),
+    'password' => env('ATOME_PASSWORD'),
+    'sandbox' => env('ATOME_SANDBOX', false),
+],
+```
+
+### Add provider event listener
+
+```
+protected $listen = [
+    \Laraditz\Bayar\Events\AtomeCallbackReceived::class => [
+        // register your listener here
+    ],
+];
+```
+
 ### Testing
 
 ```bash
