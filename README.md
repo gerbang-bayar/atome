@@ -24,7 +24,7 @@ Below are all methods available under this package.
 ## Usage
 
 ### Create Payment
-To create payment and get the payment URL to be redirected to. You can use service container or facade.
+To create payment and get the payment URL to be redirected to.
 
 ```php
 use GerbangBayar\Atome\Atome;
@@ -37,7 +37,7 @@ $response = $atome->createPayment(
     referenceId: 'someuniquereferenceid',
     currency: 'MYR',
     amount: 1000, // in cents
-    callbackUrl: 'https:/callbackurl.here',
+    callbackUrl: 'https://callbackurl.here',
     paymentResultUrl: 'https:/returnurl.here',
     customerInfo: [
         'name' => 'Raditz Farhan',
@@ -63,7 +63,7 @@ $response = $atome->createPayment(
 );
 ```
 
-See [documentation](https://doc.apaylater.com/) for more details.
+See the [documentation](https://doc.apaylater.com/) for more details.
 
 ### Testing
 
