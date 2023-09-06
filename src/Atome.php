@@ -81,8 +81,8 @@ class Atome extends Connector implements ConnectorInterface
         return $this->send(new CancelPayment($referenceId));
     }
 
-    public function refundPayment(string $referenceId): Response
+    public function refundPayment(string $referenceId, int $amount, ?string $refundId = null): Response
     {
-        return $this->send(new RefundPayment($referenceId));
+        return $this->send(new RefundPayment($referenceId, $amount, $refundId));
     }
 }
