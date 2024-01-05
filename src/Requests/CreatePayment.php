@@ -38,6 +38,7 @@ class CreatePayment extends Request implements HasBody
         public array $items,
         public array $customerInfo,
         public array $shippingAddress,
+        public int $expirationTime = 43200, // default is 12 hours
         public ?string $paymentCancelUrl = null,
         public ?string $merchantReferenceId = null,
         public ?array $billingAddress = null,
